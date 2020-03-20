@@ -7,9 +7,7 @@ node {
     }
 
     stage('build') {
-      myGradleContainer.inside("-v ${env.HOME}/.gradle:/home/gradle/.gradle") {
-        sh 'cd complete && /opt/gradle/bin/gradle build'
-      }
+      println('so far so good...')
     }
 
     stage('sonar-scanner') {
